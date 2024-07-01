@@ -1,0 +1,7 @@
+FROM node:14
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY producer.js ./
+COPY .env ./
+CMD ["node", "producer.js"]

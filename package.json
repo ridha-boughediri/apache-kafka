@@ -1,0 +1,23 @@
+{
+    "name": "kafka-nodejs-twitter-docker",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+      "kafka-node": "^5.0.0",
+      "twitter": "^1.7.1"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.7",
+      "dotenv": "^10.0.0"
+    },
+    "scripts": {
+      "start:producer": "node producer.js",
+      "start:consumer": "node consumer.js",
+      "dev:producer": "nodemon producer.js",
+      "dev:consumer": "nodemon consumer.js"
+    },
+    "author": "",
+    "license": "ISC"
+  }
+  
